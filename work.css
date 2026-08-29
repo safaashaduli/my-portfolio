@@ -1,0 +1,574 @@
+/* =========================
+   IMPORT FONTS
+========================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700&display=swap');
+
+
+/* =========================
+   RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #e9e7e1;
+    color: #171717;
+    font-family: "Manrope", sans-serif;
+}
+
+
+/* =========================
+   MAIN PAGE
+========================= */
+
+.work-page {
+    min-height: 100vh;
+    padding: 32px 55px;
+    overflow: hidden;
+}
+
+
+/* =========================
+   NAVIGATION
+========================= */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+
+/* LOGO */
+
+.logo {
+    text-decoration: none;
+    color: #171717;
+
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 42px;
+    letter-spacing: 2px;
+}
+
+
+/* NAV LINKS */
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #171717;
+
+    font-family: "Manrope", sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    letter-spacing: 1px;
+
+    position: relative;
+    padding-bottom: 10px;
+}
+
+
+/* ACTIVE WORK */
+
+.nav-links a.active::after {
+    content: "";
+
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    width: 35px;
+    height: 2px;
+
+    background-color: #245c46;
+}
+
+
+/* =========================
+   MENU BUTTON
+========================= */
+
+.menu-button {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.menu-button span {
+    display: block;
+
+    width: 30px;
+    height: 2px;
+
+    background-color: #171717;
+}
+
+
+/* =========================
+   MAIN WORK LAYOUT
+========================= */
+
+.work-content {
+    display: grid;
+    grid-template-columns: 48% 52%;
+
+    min-height: calc(100vh - 100px);
+
+    padding-top: 65px;
+}
+
+
+/* =========================
+   LEFT SIDE
+========================= */
+
+.work-left {
+    padding-top: 120px;
+
+    display: flex;
+    flex-direction: column;
+
+    padding-right: 70px;
+}
+
+
+/* =========================
+   WORK LABEL
+========================= */
+
+.work-label {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+
+    font-family: "DM Mono", monospace;
+    font-size: 13px;
+    font-weight: 500;
+
+    letter-spacing: 2px;
+
+    color: #245c46;
+
+    margin-bottom: 45px;
+}
+
+
+/* =========================
+   BIG TITLE
+========================= */
+
+.work-title {
+    display: flex;
+    flex-direction: column;
+
+    font-family: "Bebas Neue", sans-serif;
+
+    font-size: clamp(100px, 10vw, 170px);
+
+    line-height: 0.88;
+
+    letter-spacing: 1px;
+
+    color: #171717;
+
+    margin-bottom: 42px;
+}
+
+.work-title span {
+    display: block;
+}
+
+
+/* =========================
+   DESCRIPTION
+========================= */
+
+.work-description {
+    max-width: 390px;
+
+    font-family: "Manrope", sans-serif;
+
+    font-size: 16px;
+    font-weight: 400;
+
+    line-height: 1.8;
+
+    color: #333333;
+
+    margin-bottom: 65px;
+}
+
+
+/* =========================
+   BOTTOM GREEN LINE
+========================= */
+
+.bottom-line {
+    width: 80px;
+    height: 3px;
+
+    background-color: #245c46;
+}
+
+
+/* =========================
+   RIGHT SIDE
+========================= */
+
+.work-right {
+    border-left: 1px solid #9c9a93;
+
+    padding-left: 70px;
+    padding-top: 20px;
+
+    padding-right: 20px;
+}
+
+
+/* =========================
+   PROJECT NUMBER
+========================= */
+
+.project-number {
+    font-family: "DM Mono", monospace;
+
+    font-size: 22px;
+    font-weight: 500;
+
+    letter-spacing: 2px;
+
+    color: #245c46;
+
+    margin-bottom: 25px;
+}
+
+
+/* =========================
+   PROJECT NAME
+========================= */
+
+.project-name {
+    font-family: "DM Mono", monospace;
+
+    font-size: 32px;
+    font-weight: 500;
+
+    letter-spacing: 2px;
+
+    color: #171717;
+
+    margin-bottom: 16px;
+}
+
+
+/* =========================
+   PROJECT TYPE
+========================= */
+
+.project-type {
+    font-family: "DM Mono", monospace;
+
+    font-size: 14px;
+    font-weight: 500;
+
+    letter-spacing: 2px;
+
+    color: #245c46;
+
+    margin-bottom: 22px;
+}
+
+
+/* =========================
+   PROJECT DESCRIPTION
+========================= */
+
+.project-description {
+    max-width: 500px;
+
+    font-family: "Manrope", sans-serif;
+
+    font-size: 15px;
+
+    line-height: 1.9;
+
+    color: #333333;
+
+    margin-bottom: 35px;
+}
+
+
+/* =========================
+   DIVIDER
+========================= */
+
+.project-line {
+    width: 100%;
+    height: 1px;
+
+    background-color: #a8a59c;
+
+    margin-bottom: 32px;
+}
+
+
+/* =========================
+   WHAT I BUILT
+========================= */
+
+.built-title {
+    font-family: "DM Mono", monospace;
+
+    font-size: 14px;
+    font-weight: 500;
+
+    letter-spacing: 2px;
+
+    color: #245c46;
+
+    margin-bottom: 25px;
+}
+
+
+/* =========================
+   BUILT ITEMS
+========================= */
+
+.built-list {
+    display: flex;
+    flex-direction: column;
+
+    gap: 20px;
+}
+
+
+.built-item {
+    display: flex;
+    align-items: center;
+
+    gap: 22px;
+}
+
+
+/* ICON CIRCLE */
+
+.icon {
+    width: 48px;
+    height: 48px;
+
+    border: 1px solid #6f6d66;
+
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 22px;
+
+    color: #171717;
+
+    flex-shrink: 0;
+}
+
+
+.built-item p {
+    font-family: "Manrope", sans-serif;
+
+    font-size: 15px;
+
+    color: #333333;
+}
+
+
+/* =========================
+   BOTTOM PROJECT LINE
+========================= */
+
+.bottom-project-line {
+    margin-top: 32px;
+    margin-bottom: 28px;
+}
+
+
+/* =========================
+   COMING SOON BOX
+========================= */
+
+.coming-soon {
+    border: 1px solid #8e8b83;
+
+    min-height: 90px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 25px;
+
+    padding: 20px 35px;
+
+    font-family: "DM Mono", monospace;
+
+    font-size: 14px;
+    font-weight: 500;
+
+    letter-spacing: 2px;
+
+    color: #245c46;
+}
+
+
+/* ROCKET */
+
+.rocket {
+    font-size: 30px;
+    transform: rotate(-35deg);
+
+    display: inline-block;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 1100px) {
+
+    .work-page {
+        padding: 30px;
+    }
+
+    .nav-links {
+        gap: 18px;
+    }
+
+    .nav-links a {
+        font-size: 10px;
+    }
+
+    .work-content {
+        grid-template-columns: 45% 55%;
+    }
+
+    .work-left {
+        padding-right: 40px;
+    }
+
+    .work-right {
+        padding-left: 40px;
+    }
+
+    .work-title {
+        font-size: 110px;
+    }
+
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 700px) {
+
+    .work-page {
+        padding: 22px;
+        overflow: visible;
+    }
+
+
+    /* Hide navigation */
+
+    .nav-links {
+        display: none;
+    }
+
+
+    /* One column */
+
+    .work-content {
+        grid-template-columns: 1fr;
+
+        padding-top: 40px;
+
+        gap: 60px;
+    }
+
+
+    /* LEFT */
+
+    .work-left {
+        padding-top: 30px;
+        padding-right: 0;
+    }
+
+
+    .work-title {
+        font-size: 90px;
+    }
+
+
+    .work-description {
+        font-size: 14px;
+    }
+
+
+    /* RIGHT */
+
+    .work-right {
+        border-left: none;
+
+        border-top: 1px solid #9c9a93;
+
+        padding-left: 0;
+        padding-top: 45px;
+        padding-right: 0;
+    }
+
+
+    .project-name {
+        font-size: 26px;
+    }
+
+
+    .project-type {
+        font-size: 11px;
+        line-height: 1.6;
+    }
+
+
+    .project-description {
+        font-size: 14px;
+    }
+
+
+    .built-item p {
+        font-size: 14px;
+    }
+
+
+    .coming-soon {
+        font-size: 11px;
+        padding: 20px;
+    }
+
+}

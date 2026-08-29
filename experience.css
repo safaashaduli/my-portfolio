@@ -1,0 +1,441 @@
+/* =========================
+   IMPORT FONTS
+========================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+Garamond:wght@500;600&family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700&family=Syne:wght@500;600;700&display=swap');
+
+
+/* =========================
+   RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    background-color: #e9e7e1;
+    color: #171717;
+    font-family: "Manrope", sans-serif;
+}
+
+
+/* =========================
+   MAIN PAGE
+========================= */
+
+.experience-page {
+    min-height: 100vh;
+    padding: 32px 55px;
+    overflow: hidden;
+}
+
+
+/* =========================
+   NAVIGATION
+========================= */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+
+.logo {
+    text-decoration: none;
+    color: #171717;
+
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 42px;
+    letter-spacing: 2px;
+}
+
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+
+.nav-links a {
+    text-decoration: none;
+    color: #171717;
+
+    font-family: "Manrope", sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    letter-spacing: 1px;
+
+    position: relative;
+    padding-bottom: 10px;
+}
+
+
+/* ACTIVE PAGE */
+
+.nav-links a.active::after {
+    content: "";
+
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    width: 35px;
+    height: 2px;
+
+    background-color: #245c46;
+}
+
+
+/* =========================
+   MENU BUTTON
+========================= */
+
+.menu-button {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+
+.menu-button span {
+    display: block;
+
+    width: 30px;
+    height: 2px;
+
+    background-color: #171717;
+}
+
+
+/* =========================
+   EXPERIENCE SECTION
+========================= */
+
+.experience-section {
+    display: grid;
+    grid-template-columns: 48% 52%;
+
+    min-height: calc(100vh - 100px);
+
+    padding-top: 65px;
+}
+
+
+/* =========================
+   LEFT SIDE
+========================= */
+
+.experience-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding-bottom: 60px;
+}
+
+
+/* =========================
+   PAGE LABEL
+========================= */
+
+.page-label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    font-family: "DM Mono", monospace;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 2px;
+
+    color: #245c46;
+
+    margin-bottom: 18px;
+}
+
+
+/* =========================
+   MAIN TITLE
+========================= */
+
+.experience-title {
+    display: flex;
+    flex-direction: column;
+
+    font-family: "Bebas Neue", sans-serif;
+
+    font-size: clamp(80px, 8vw, 150px);
+
+    line-height: 0.82;
+    letter-spacing: 1px;
+
+    color: #171717;
+
+    margin-bottom: 30px;
+}
+
+
+.experience-title span {
+    display: block;
+}
+
+
+/* =========================
+   INTRODUCTION
+========================= */
+
+.experience-intro {
+    max-width: 480px;
+
+    font-family: "Manrope", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+
+    line-height: 1.8;
+
+    color: #333333;
+}
+
+
+/* =========================
+   TIMELINE
+========================= */
+
+.timeline {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding-left: 40px;
+
+    gap: 0;
+}
+
+
+/* =========================
+   TIMELINE ITEM
+========================= */
+
+.timeline-item {
+    display: grid;
+
+    grid-template-columns: 145px 1fr;
+
+    column-gap: 35px;
+
+    padding: 24px 0;
+
+    border-top: 1px solid rgba(23, 23, 23, 0.25);
+}
+
+
+/* LAST ITEM */
+
+.timeline-item:last-child {
+    border-bottom: 1px solid rgba(23, 23, 23, 0.25);
+}
+
+
+/* =========================
+   YEAR
+========================= */
+
+.timeline-year {
+    font-family: "DM Mono", monospace;
+
+    font-size: 11px;
+    font-weight: 500;
+
+    letter-spacing: 1.5px;
+
+    color: #245c46;
+
+    padding-top: 5px;
+}
+
+
+/* =========================
+   TIMELINE CONTENT
+========================= */
+
+.timeline-content h3 {
+    font-family: "DM Mono", monospace;
+
+    font-size: 14px;
+    font-weight: 500;
+
+    letter-spacing: 2px;
+
+    color: #171717;
+
+    margin-bottom: 10px;
+}
+
+
+.timeline-content p {
+    max-width: 480px;
+
+    font-family: "Manrope", sans-serif;
+
+    font-size: 13px;
+    font-weight: 400;
+
+    line-height: 1.7;
+
+    color: #444444;
+}
+
+
+/* =========================
+   ONGOING ITEM
+========================= */
+
+.timeline-item.ongoing h3 {
+    color: #245c46;
+}
+
+
+/* =========================
+   HOVER EFFECT
+========================= */
+
+.timeline-item {
+    transition: 0.3s;
+}
+
+
+.timeline-item:hover {
+    transform: translateX(8px);
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 1000px) {
+
+    .experience-page {
+        padding: 30px;
+    }
+
+
+    .nav-links {
+        gap: 18px;
+    }
+
+
+    .nav-links a {
+        font-size: 10px;
+    }
+
+
+    .experience-section {
+        grid-template-columns: 42% 58%;
+    }
+
+
+    .experience-title {
+        font-size: 100px;
+    }
+
+
+    .timeline {
+        padding-left: 20px;
+    }
+
+
+    .timeline-item {
+        grid-template-columns: 120px 1fr;
+    }
+
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 700px) {
+
+    .experience-page {
+        padding: 22px;
+        overflow: visible;
+    }
+
+
+    .nav-links {
+        display: none;
+    }
+
+
+    .experience-section {
+        display: flex;
+        flex-direction: column;
+
+        padding-top: 55px;
+
+        gap: 50px;
+    }
+
+
+    .experience-left {
+        padding-bottom: 0;
+    }
+
+
+    .experience-title {
+        font-size: 85px;
+    }
+
+
+    .experience-intro {
+        font-size: 13px;
+    }
+
+
+    .timeline {
+        padding-left: 0;
+    }
+
+
+    .timeline-item {
+        grid-template-columns: 1fr;
+
+        row-gap: 10px;
+
+        padding: 22px 0;
+    }
+
+
+    .timeline-year {
+        padding-top: 0;
+    }
+
+
+    .timeline-content h3 {
+        font-size: 12px;
+    }
+
+
+    .timeline-content p {
+        font-size: 12px;
+    }
+
+}

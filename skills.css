@@ -1,0 +1,575 @@
+/* =========================
+   IMPORT FONTS
+========================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+Garamond:wght@500;600&family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700&family=Syne:wght@500;600;700&display=swap');
+
+
+/* =========================
+   RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    background-color: #e9e7e1;
+    color: #171717;
+    font-family: "Manrope", sans-serif;
+}
+
+
+/* =========================
+   MAIN PAGE
+========================= */
+
+.skills-page {
+    min-height: 100vh;
+    padding: 32px 55px;
+}
+
+
+/* =========================
+   NAVBAR
+   SAME AS HOME PAGE
+========================= */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+
+.logo {
+    text-decoration: none;
+    color: #171717;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 42px;
+    letter-spacing: 2px;
+}
+
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+
+.nav-links a {
+    text-decoration: none;
+    color: #171717;
+
+    font-family: "Manrope", sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    letter-spacing: 1px;
+
+    position: relative;
+    padding-bottom: 10px;
+}
+
+
+/* ACTIVE PAGE */
+
+.nav-links a.active::after {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    bottom: 0;
+
+    width: 35px;
+    height: 2px;
+
+    background-color: #245c46;
+}
+
+
+/* =========================
+   MENU BUTTON
+========================= */
+
+.menu-button {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+
+.menu-button span {
+    display: block;
+
+    width: 30px;
+    height: 2px;
+
+    background-color: #171717;
+}
+
+
+/* =========================
+   MAIN SKILLS LAYOUT
+========================= */
+
+.skills-content {
+
+    display: grid;
+
+    grid-template-columns: 50% 50%;
+
+    min-height: calc(100vh - 100px);
+
+    padding-top: 55px;
+
+    gap: 20px;
+
+}
+
+
+/* =========================
+   LEFT SIDE
+========================= */
+
+.skills-left {
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    padding-right: 50px;
+
+}
+
+
+/* =========================
+   TOP LABEL
+========================= */
+
+.skills-label {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    font-family: "DM Mono", monospace;
+
+    font-size: 13px;
+
+    font-weight: 500;
+
+    letter-spacing: 2px;
+
+    color: #245c46;
+
+    margin-bottom: 20px;
+
+}
+
+
+/* =========================
+   BIG TITLE
+========================= */
+
+.skills-title {
+
+    display: flex;
+
+    flex-direction: column;
+
+    font-family: "Bebas Neue", sans-serif;
+
+    font-size: clamp(85px, 9vw, 150px);
+
+    line-height: 0.82;
+
+    letter-spacing: 1px;
+
+    color: #171717;
+
+    margin-bottom: 35px;
+
+}
+
+
+.skills-title span {
+    display: block;
+}
+
+
+/* =========================
+   INTRODUCTION
+========================= */
+
+.skills-intro {
+
+    max-width: 500px;
+
+    font-family: "Manrope", sans-serif;
+
+    font-size: 14px;
+
+    font-weight: 400;
+
+    line-height: 1.9;
+
+    color: #333333;
+
+    margin-bottom: 35px;
+
+}
+
+
+/* =========================
+   CERTIFICATIONS
+========================= */
+
+.certification {
+
+    border-left: 2px solid #245c46;
+
+    padding-left: 20px;
+
+}
+
+
+.cert-label {
+
+    display: block;
+
+    font-family: "DM Mono", monospace;
+
+    font-size: 11px;
+
+    letter-spacing: 2px;
+
+    color: #245c46;
+
+    margin-bottom: 14px;
+
+}
+
+
+.cert-items {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 8px;
+
+}
+
+
+.cert-items p {
+
+    font-size: 12px;
+
+    color: #333333;
+
+}
+
+
+/* =========================
+   RIGHT SIDE
+========================= */
+
+.skills-right {
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    padding-left: 55px;
+
+    border-left: 1px solid rgba(23, 23, 23, 0.18);
+
+}
+
+
+/* =========================
+   SKILL SECTION
+========================= */
+
+.skill-section {
+
+    display: grid;
+
+    grid-template-columns: 90px 1fr;
+
+    align-items: center;
+
+    gap: 25px;
+
+    padding: 28px 0;
+
+    border-bottom: 1px solid rgba(23, 23, 23, 0.15);
+
+}
+
+
+/* =========================
+   ICON
+========================= */
+
+.skill-icon {
+
+    width: 55px;
+
+    height: 55px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-family: "DM Mono", monospace;
+
+    font-size: 30px;
+
+    color: #245c46;
+
+}
+
+
+/* =========================
+   SKILL TEXT
+========================= */
+
+.skill-info h2 {
+
+    font-family: "DM Mono", monospace;
+
+    font-size: 14px;
+
+    font-weight: 500;
+
+    letter-spacing: 2px;
+
+    color: #245c46;
+
+    margin-bottom: 12px;
+
+}
+
+
+.skill-info p {
+
+    font-family: "Manrope", sans-serif;
+
+    font-size: 14px;
+
+    line-height: 1.8;
+
+    color: #333333;
+
+    max-width: 500px;
+
+}
+
+
+/* =========================
+   TOOLS SECTION
+========================= */
+
+.tools-section {
+
+    padding-top: 28px;
+
+}
+
+
+.tools-section h2 {
+
+    font-family: "DM Mono", monospace;
+
+    font-size: 14px;
+
+    font-weight: 500;
+
+    letter-spacing: 2px;
+
+    color: #245c46;
+
+    margin-bottom: 15px;
+
+}
+
+
+.tools-section p {
+
+    font-family: "Manrope", sans-serif;
+
+    font-size: 13px;
+
+    line-height: 1.9;
+
+    color: #333333;
+
+}
+
+
+/* =========================
+   HOVER EFFECT
+========================= */
+
+.skill-section {
+
+    transition: 0.3s;
+
+}
+
+
+.skill-section:hover {
+
+    padding-left: 8px;
+
+}
+
+
+.skill-section:hover h2 {
+
+    color: #171717;
+
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 1000px) {
+
+    .skills-page {
+        padding: 30px;
+    }
+
+
+    .nav-links {
+        gap: 18px;
+    }
+
+
+    .nav-links a {
+        font-size: 10px;
+    }
+
+
+    .skills-content {
+        grid-template-columns: 45% 55%;
+    }
+
+
+    .skills-title {
+        font-size: 100px;
+    }
+
+
+    .skills-right {
+        padding-left: 35px;
+    }
+
+
+    .skills-left {
+        padding-right: 25px;
+    }
+
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 700px) {
+
+    .skills-page {
+        padding: 22px;
+    }
+
+
+    .nav-links {
+        display: none;
+    }
+
+
+    .skills-content {
+
+        grid-template-columns: 1fr;
+
+        padding-top: 50px;
+
+        gap: 50px;
+
+    }
+
+
+    .skills-left {
+        padding-right: 0;
+    }
+
+
+    .skills-right {
+
+        padding-left: 0;
+
+        border-left: none;
+
+    }
+
+
+    .skills-title {
+
+        font-size: 85px;
+
+    }
+
+
+    .skill-section {
+
+        grid-template-columns: 60px 1fr;
+
+        gap: 15px;
+
+        padding: 25px 0;
+
+    }
+
+
+    .skill-info h2 {
+        font-size: 12px;
+    }
+
+
+    .skill-info p {
+        font-size: 13px;
+    }
+
+
+    .skills-intro {
+        font-size: 13px;
+    }
+
+}
