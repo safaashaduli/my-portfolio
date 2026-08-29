@@ -499,8 +499,15 @@ body {
     /* Hide navigation */
 
     .nav-links {
-        display: none;
-    }
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+}
+
+.menu-button {
+    display: none;
+}
 
 
     /* One column */
